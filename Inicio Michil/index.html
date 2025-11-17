@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michil Coffee - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body { 
+            padding-top: 56px; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa; /* Un color de fondo suave */
+        }
+        main {
+            flex-grow: 1; 
+        }
+
+        /* --- Estilos para la sección Hero (Foto a pantalla completa) --- */
+        .hero-section {
+            background: url('gatos.jpg') no-repeat center center; /* RUTA DE TU IMAGEN PRINCIPAL AQUÍ */
+            background-size: cover; /* Cubre todo el espacio */
+            height: 100vh; /* Ocupa toda la altura visible */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente el contenido */
+            align-items: center; /* Centra horizontalmente el contenido */
+            color: white; /* Color del texto sobre la imagen */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejor legibilidad */
+            text-align: center;
+            margin-top: -56px; /* Para que la imagen suba y quede detrás del navbar fijo */
+            position: relative; /* Necesario para que el z-index funcione correctamente */
+            z-index: 0; /* Asegura que el navbar esté por encima */
+        }
+        .hero-section h1 {
+            font-size: 4.5rem; /* Tamaño grande para el título */
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+        }
+
+        /* --- Estilos para la sección de Descripción con Imagen Lateral --- */
+        .description-section {
+            padding: 80px 0; /* Espacio arriba y abajo */
+            background-color: white;
+        }
+        .description-image {
+            max-width: 100%; /* Asegura que la imagen no se desborde */
+            height: auto;
+            border-radius: 8px; /* Bordes ligeramente redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        .description-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra el texto verticalmente si la imagen es más alta */
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Michil Coffee</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <h1>Michil Coffee</h1>
+                <p>Tu rincón favorito para relajarte con café y compañía felina.</p>
+            </div>
+        </section>
+
+        <section class="description-section container">
+            <div class="row align-items-center">
+                <div class="col-md-6 offset-md-1 description-text"> 
+            <h2>Un Lugar Único para Amantes de los Gatos</h2>
+            <p>En Michil Coffee, combinamos la pasión por el buen café con el amor por nuestros amigos felinos. Nuestro espacio está diseñado para ofrecerte un ambiente tranquilo y acogedor, donde puedes disfrutar de tu bebida favorita mientras interactúas con gatos adorables que buscan un hogar.</p>
+            <p>Colaboramos con refugios locales para dar una segunda oportunidad a gatitos rescatados. Cada visita y compra ayuda a su bienestar y proceso de adopción. ¡Ven a conocernos y déjate acariciar por la magia de los gatos!</p>
+        </div>
+        <div class="col-md-5 text-center">
+            <img src="oiia.gif" class="description-image" alt="Gato en el Cat Café"> 
+        </div>
+            </div>
+        </section>
+
+        <section class="container my-5 py-5 text-center bg-light">
+            <h2>Nuestros acompañantes felinos</h2>
+            <p class="lead">Ven a conocer a algunos de los residentes que esperan tu visita.</p>
+            </section>
+        
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <div class="container text-center">
+            <p class="small mb-1">
+                © 2025 Michil Coffee - Todos los derechos reservados
+            </p>
+            <p class="small mb-1">
+                Michil Coffee
+            </p>
+            <p class="small mb-0">
+                Teléfono: +56 9 6506 5089
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
