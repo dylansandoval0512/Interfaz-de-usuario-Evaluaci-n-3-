@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michil Coffee - Menú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        body { 
+            padding-top: 56px; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8f9fa; 
+        }
+        main {
+            flex-grow: 1; 
+        }
+        .menu-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            border-radius: 8px;
+        }
+
+        .item-title {
+            color: #343a40; 
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 1.8rem;
+        }
+
+        .item-ingredients {
+            font-size: 1em;
+            color: #6c757d; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Michil Coffee</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menú</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5" style="color: #495057;">☕ Nuestra Carta Gatuna 🐾</h1>
+        
+        <div class="row">
+            
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3"> 
+                        <img src="americano.png" alt="Foto de Café del Día" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4"> 
+                        <h4 class="item-title">1. El Maullido Matinal</h4>
+                        <p class="mb-1">El clásico americano o espresso, preparado con granos de origen local. Fuerte, aromático y el mejor despertador.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Café de especialidad 100% Arábica, agua purificada.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="latte.png" alt="Foto de Latte de Gatito" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">2. Latte de Gatito</h4>
+                        <p class="mb-1">Suave latte con leche al vapor y una fina capa de espuma decorada con arte latte felino. Ideal para un día frío.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Espresso, leche fresca (entera, descremada o vegetal), azúcar a gusto.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="capuchino.png" alt="Foto de Cappuccino" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">3. Cappuccino Pelusa</h4>
+                        <p class="mb-1">La combinación perfecta de espresso, leche y abundante espuma, espolvoreado con canela o cacao.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Espresso doble, leche al vapor, canela/cacao en polvo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="te.png" alt="Foto de Té de Menta" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">4. Infusión Tranquila</h4>
+                        <p class="mb-1">Té de menta fresca, ideal para una tarde de relajación. Ayuda a la digestión y calma la mente.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Hojas de menta natural, agua caliente.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="chocolate.png" alt="Foto de Chocolate Caliente" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">5. El Abrazo del Gato</h4>
+                        <p class="mb-1">Chocolate caliente cremoso, endulzado naturalmente y servido con crema batida. Un clásico reconfortante.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Chocolate 70% cacao, leche entera, un toque de vainilla.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="muffin.jpg" alt="Foto de Muffin de Arándanos" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">6. Muffin Orejas</h4>
+                        <p class="mb-1">Muffin esponjoso relleno de arándanos frescos, horneado diariamente. Perfecto para acompañar tu café.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Harina de trigo, huevos, arándanos, azúcar morena.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="cuaso.png" alt="Foto de Croissant" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">7. Croissant Francés</h4>
+                        <p class="mb-1">Mantequilloso y hojaldrado, horneado a la perfección. Puedes pedirlo simple o con jamón y queso.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Mantequilla, harina de trigo, leche, huevo. Opciones con jamón y queso.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="galletas.png" alt="Foto de Galletas de Avena" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">8. Galletas Gatitos</h4>
+                        <p class="mb-1">Galletas de avena y pasas, crujientes por fuera y suaves por dentro. Un snack saludable.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Avena, pasas, miel, harina integral, huevo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="flan.png" alt="Foto de Jugo Natural" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">9. Flan Gatito</h4>
+                        <p class="mb-1">Sabor fresa, vainilla o chocolate, suave y dulce, lo mejor para acompañar un buen café.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Huevo, leche, azucar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="menu-item d-flex align-items-center">
+                    <div class="col-3">
+                        <img src="dona.png" alt="Foto de Agua Mineral" class="img-fluid">
+                    </div>
+                    <div class="col-9 ps-4">
+                        <h4 class="item-title">10. Dona Felina</h4>
+                        <p class="mb-1">Donas rellenas de chocolate. Esencial para acompañar con algo amargo.</p>
+                        <p class="item-ingredients mb-0">Ingredientes: Aceite de maíz, mantequilla, huevo, dulce de leche, chocolate.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <div class="container text-center">
+            <p class="small mb-1">
+                © 2025 Michil Coffee - Todos los derechos reservados
+            </p>
+            <p class="small mb-1">
+                Michil Coffee
+            </p>
+            <p class="small mb-0">
+                Teléfono: +56 9 6506 5089
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
