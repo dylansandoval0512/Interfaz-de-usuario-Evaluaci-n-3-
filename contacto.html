@@ -90,6 +90,12 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#contacto">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html" title="Ver Carrito">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                            <span class="badge bg-danger rounded-pill" id="cart-count">0</span>
+                            </a>
+                        </li>
                         <li class="nav-item" id="login-button">
                             <a class="nav-link" href="login.html">Iniciar Sesión</a>
                         </li>
@@ -200,6 +206,21 @@
         </div>
     </footer>
     <script>
+function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartCountElement = document.getElementById('cart-count');
+    let totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+
+    if (cartCountElement) {
+        cartCountElement.textContent = totalItems;
+        if (totalItems === 0) {
+            cartCountElement.style.display = 'none';
+        } else {
+            cartCountElement.style.display = 'inline';
+        }
+    }
+}
+updateCartCount();
     document.addEventListener('DOMContentLoaded', function() {
         const userName = localStorage.getItem('currentUser');
         const loginButton = document.getElementById('login-button');

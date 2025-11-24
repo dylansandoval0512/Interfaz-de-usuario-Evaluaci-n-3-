@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michil Coffee - Menú</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
     
     <style>
         body { 
@@ -61,6 +62,14 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="menu.html">Menú</a></li>
                         <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html" title="Ver Carrito">
+                            <i class="bi bi-cart-fill"></i> Carrito
+                            <span class="badge bg-danger rounded-pill" id="cart-count">0</span>
+                            </a>
+                        </li>
+                        
                         <li class="nav-item" id="login-button">
                             <a class="nav-link" href="login.html">Iniciar Sesión</a>
                         </li>
@@ -90,7 +99,10 @@
                         <h4 class="item-title">1. El Maullido Matinal</h4>
                         <p class="mb-1">El clásico americano o espresso, preparado con granos de origen local. Fuerte, aromático y el mejor despertador.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Café de especialidad 100% Arábica, agua purificada.</p>
-                        <h4 class="item-title">$3.290</h4>
+                        <h4 class="item-title d-inline me-3">$3.290</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="El Maullido Matinal" data-price="3290">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -104,7 +116,10 @@
                         <h4 class="item-title">2. Latte de Gatito</h4>
                         <p class="mb-1">Suave latte con leche al vapor y una fina capa de espuma decorada con arte latte felino. Ideal para un día frío.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Espresso, leche fresca (entera, descremada o vegetal), azúcar a gusto.</p>
-                        <h4 class="item-title">$4.390</h4>
+                        <h4 class="item-title d-inline me-3">$4.390</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Latte de Gatito" data-price="4390">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -118,7 +133,10 @@
                         <h4 class="item-title">3. Cappuccino Pelusa</h4>
                         <p class="mb-1">La combinación perfecta de espresso, leche y abundante espuma, espolvoreado con canela o cacao.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Espresso doble, leche al vapor, canela/cacao en polvo.</p>
-                        <h4 class="item-title">$4.590</h4>
+                        <h4 class="item-title d-inline me-3">$4.590</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Cappuccino Pelusa" data-price="4590">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -132,7 +150,10 @@
                         <h4 class="item-title">4. Infusión Tranquila</h4>
                         <p class="mb-1">Té de menta fresca, ideal para una tarde de relajación. Ayuda a la digestión y calma la mente.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Hojas de menta natural, agua caliente.</p>
-                        <h4 class="item-title">$2.990</h4>
+                        <h4 class="item-title d-inline me-3">$2.990</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Infusión Tranquila" data-price="2990">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -146,7 +167,10 @@
                         <h4 class="item-title">5. El Abrazo del Gato</h4>
                         <p class="mb-1">Chocolate caliente cremoso, endulzado naturalmente y servido con crema batida. Un clásico reconfortante.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Chocolate 70% cacao, leche entera, un toque de vainilla.</p>
-                        <h4 class="item-title">$5.190</h4>
+                        <h4 class="item-title d-inline me-3">$5.190</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="El Abrazo del Gato" data-price="5190">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -160,7 +184,10 @@
                         <h4 class="item-title">6. Muffin Orejas</h4>
                         <p class="mb-1">Muffin esponjoso relleno de arándanos frescos, horneado diariamente. Perfecto para acompañar tu café.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Harina de trigo, huevos, arándanos, azúcar morena.</p>
-                        <h4 class="item-title">$3.490</h4>
+                        <h4 class="item-title d-inline me-3">$3.490</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Muffin Orejas" data-price="3490">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -174,7 +201,10 @@
                         <h4 class="item-title">7. Croissant Francés</h4>
                         <p class="mb-1">Mantequilloso y hojaldrado, horneado a la perfección. Puedes pedirlo simple o con jamón y queso.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Mantequilla, harina de trigo, leche, huevo. Opciones con jamón y queso.</p>
-                        <h4 class="item-title">$4.490</h4>
+                        <h4 class="item-title d-inline me-3">$4.490</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Croissant Francés" data-price="4490">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -188,7 +218,10 @@
                         <h4 class="item-title">8. Galletas Gatitos</h4>
                         <p class="mb-1">Galletas de avena y pasas, crujientes por fuera y suaves por dentro. Un snack saludable.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Avena, pasas, miel, harina integral, huevo.</p>
-                        <h4 class="item-title">$3.290</h4>
+                        <h4 class="item-title d-inline me-3">$3.290</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Galletas Gatitos" data-price="3290">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -202,7 +235,10 @@
                         <h4 class="item-title">9. Flan Gatito</h4>
                         <p class="mb-1">Sabor fresa, vainilla o chocolate, suave y dulce, lo mejor para acompañar un buen café.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Huevo, leche, azucar.</p>
-                        <h4 class="item-title">$2.590</h4>
+                        <h4 class="item-title d-inline me-3">$2.590</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Flan Gatito" data-price="2590">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -216,7 +252,10 @@
                         <h4 class="item-title">10. Dona Felina</h4>
                         <p class="mb-1">Donas rellenas de chocolate. Esencial para acompañar con algo amargo.</p>
                         <p class="item-ingredients mb-0">Ingredientes: Aceite de maíz, mantequilla, huevo, dulce de leche, chocolate.</p>
-                        <h4 class="item-title">$2.990</h4>
+                        <h4 class="item-title d-inline me-3">$2.990</h4>
+                        <button class="btn btn-primary btn-sm add-to-cart" data-name="Dona Felina" data-price="2990">
+                            Añadir <i class="bi bi-cart-plus"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -238,36 +277,77 @@
             </p>
         </div>
     </footer>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const userName = localStorage.getItem('currentUser');
-        const loginButton = document.getElementById('login-button');
-        const userDisplay = document.getElementById('user-display');
-        const userNameLink = document.getElementById('user-name');
-        const logoutButton = document.getElementById('logout-button');
-        const logoutLink = document.getElementById('logout-link');
-        if (userName) {
-            if(loginButton) loginButton.classList.add('d-none');
-            if(userDisplay) userDisplay.classList.remove('d-none');
-            if(userNameLink) userNameLink.textContent = userName;
-            if(logoutButton) logoutButton.classList.remove('d-none');
-        } else {
-            if(loginButton) loginButton.classList.remove('d-none');
-            if(userDisplay) userDisplay.classList.add('d-none');
-            if(logoutButton) logoutButton.classList.add('d-none');
-        }
-        if (logoutLink) {
-            logoutLink.addEventListener('click', function(event) {
-                event.preventDefault(); 
-                localStorage.removeItem('currentUser'); 
-                window.location.href = 'index.html'; 
-            });
-        }
-    });
-</script>
+    
+    <script>
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartCountElement = document.getElementById('cart-count');
+            
+            let totalItems = cart.reduce((total, item) => total + item.quantity, 0);
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+            if (cartCountElement) {
+                cartCountElement.textContent = totalItems;
+                if (totalItems === 0) {
+                    cartCountElement.style.display = 'none';
+                } else {
+                    cartCountElement.style.display = 'inline';
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem('currentUser');
+            const loginButton = document.getElementById('login-button');
+            const userDisplay = document.getElementById('user-display');
+            const userNameLink = document.getElementById('user-name');
+            const logoutButton = document.getElementById('logout-button');
+            const logoutLink = document.getElementById('logout-link');
+
+            if (userName) {
+                if(loginButton) loginButton.classList.add('d-none');
+                if(userDisplay) userDisplay.classList.remove('d-none');
+                if(userNameLink) userNameLink.textContent = userName;
+                if(logoutButton) logoutButton.classList.remove('d-none');
+            } else {
+                if(loginButton) loginButton.classList.remove('d-none');
+                if(userDisplay) userDisplay.classList.add('d-none');
+                if(logoutButton) logoutButton.classList.add('d-none');
+            }
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function(event) {
+                    event.preventDefault(); 
+                    localStorage.removeItem('currentUser'); 
+                    window.location.href = 'index.html'; 
+                });
+            }
+            updateCartCount();
+            const buttons = document.querySelectorAll('.add-to-cart');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const name = this.getAttribute('data-name');
+                    const price = parseInt(this.getAttribute('data-price')); 
+                    
+                    let cart = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+                    const existingItem = cart.find(item => item.name === name);
+
+                    if (existingItem) {
+                        existingItem.quantity += 1;
+                    } else {
+                        cart.push({ name: name, price: price, quantity: 1 });
+                    }
+
+                    localStorage.setItem('cartItems', JSON.stringify(cart));
+                    
+                    updateCartCount();
+
+                    alert(`¡Se ha añadido 1 unidad de ${name} al carrito!`);
+                });
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
